@@ -29,7 +29,7 @@
           <a mat-raised-button><i class="fa fa-skype"></i> Skype</a>
           <a mat-raised-button href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
         </div>
-        </div>
+      </div>
       <div fxFlex="40">
         <h4>Map of our Location</h4>
       </div>
@@ -43,21 +43,21 @@
       <p>
         <mat-form-field class="half-width">
           <input matInput formControlName="firstname" placeholder="First Name" type="text" required>
-          <mat-error *ngIf="formErrors.firstname">{{ formErrors.firstname }}</mat-error>
+          <mat-error *ngIf="formErrors.firstname">{{formErrors.firstname}}</mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
           <input matInput formControlName="lastname" placeholder="Last Name" type="text" required>
-          <mat-error *ngIf="formErrors.lastname">{{ formErrors.lastname }}</mat-error>
+          <mat-error *ngIf="formErrors.lastname">{{formErrors.lastname}}</mat-error>
         </mat-form-field>
       </p>
       <p>
         <mat-form-field class="half-width">
           <input matInput formControlName="telnum" placeholder="Tel. Number" type="tel" pattern="[0-9]*" required>
-          <mat-error *ngIf="formErrors.telnum">{{ formErrors.telnum }}</mat-error>
+          <mat-error *ngIf="formErrors.telnum">{{formErrors.telnum}}</mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
           <input matInput formControlName="email" placeholder="Email" type="email" email required>
-          <mat-error *ngIf="formErrors.email">{{ formErrors.email }}</mat-error>
+          <mat-error *ngIf="formErrors.email">{{formErrors.email}}</mat-error>
         </mat-form-field>
       </p>
       <table class="form-size">
